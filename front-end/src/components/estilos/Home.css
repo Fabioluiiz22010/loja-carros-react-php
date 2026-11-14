@@ -1,0 +1,159 @@
+/* Home.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  /* Se quiser textura metálica ou similar, descomente a linha abaixo e coloque a imagem na pasta pública */
+  /* background: #f4f4f4 url('/imagens/textura-metalica.png') repeat; */
+}
+
+/* Container principal */
+.container-pagina {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Títulos */
+.titulo-pagina {
+  font-size: 3rem;
+  color: #222;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.descricao-pagina {
+  margin-bottom: 50px;
+}
+
+.titulo-secao {
+  font-size: 2rem;
+  color: #c62828; /* vermelho automotivo */
+  margin-bottom: 20px;
+  border-left: 6px solid #c62828;
+  padding-left: 15px;
+  font-weight: 700;
+}
+
+/* Texto */
+.descricao-pagina p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Cards de depoimentos */
+.container-depoimentos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card-depoimento {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+.texto-depoimento {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.autor-depoimento {
+  text-align: right;
+  font-weight: 700;
+  color: #c62828;
+  font-size: 1rem;
+}
+
+/* Lista de benefícios */
+.lista-beneficios {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding-left: 0;
+}
+
+.item-beneficio {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-weight: 600;
+  color: #333;
+}
+
+.icone-beneficio {
+  font-size: 2rem;
+  color: #c62828;
+  min-width: 40px;
+  text-align: center;
+}
+
+/* Texto contato */
+.texto-contato {
+  margin-bottom: 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #444;
+  text-align: center;
+}
+
+/* Botão */
+.botao-secundario {
+  display: inline-block;
+  background-color: #c62828;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  max-width: 200px;
+}
+
+.botao-secundario:hover {
+  background-color: #a41e1e;
+  box-shadow: 0 0 15px #a41e1eaa;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .titulo-pagina {
+    font-size: 2.2rem;
+  }
+
+  .titulo-secao {
+    font-size: 1.6rem;
+  }
+
+  .texto-contato {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,65 @@
+/*Card.css*/
+
+/* Estilo para o contêiner da lista */
+.card {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Alinhamento dos cards */
+}
+
+/* Estilo para cada item da lista (cartão) */
+.card li {
+  flex: 1 0 22%; /* Para caber até 4 cards por linha com espaçamento */
+  max-width: 22%; /* Garantir que no máximo 4 por linha */
+  margin: 1%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #d3d3d3; /* Fundo cinza */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo para os botões dentro de cada cartão */
+.card li button {
+  margin-top: 5px;
+  display: block;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Botão de editar */
+.card li .edit-button {
+  background-color: #ffeb3b; /* Amarelo */
+  color: #000;
+}
+
+/* Botão de deletar */
+.card li .delete-button {
+  background-color: #f44336; /* Vermelho */
+  color: #fff;
+}
+
+/* Hover genérico para botões */
+.card li button:hover {
+  opacity: 0.8;
+}
+
+/* Título da lista */
+h2 {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}

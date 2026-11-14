@@ -1,0 +1,135 @@
+/* Estilos para a página de simulação de financiamento */
+
+.container-pagina4 {
+  background-color: #f5f5f5;
+  color: #222;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-pagina4 .titulo-pagina {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.container-pagina4 p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.container-pagina4 .grupo-formulario {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-pagina4 label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.container-pagina4 select,
+.container-pagina4 input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: white;
+  transition: border 0.3s ease;
+}
+
+.container-pagina4 select:focus,
+.container-pagina4 input:focus {
+  border-color: #c62828;
+  outline: none;
+  box-shadow: 0 0 5px rgba(198, 40, 40, 0.3);
+}
+
+.container-pagina4 .btn.botao-principal,
+.container-pagina4 .btn.botao-secundario {
+  background-color: #c62828;
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
+  margin: 30px auto 20px auto;
+}
+
+.container-pagina4 .btn.botao-secundario {
+  background-color: #c62828;
+  margin-top: 20px;
+}
+
+.container-pagina4 .btn:hover {
+  background-color: #a41e1e;
+  transform: scale(1.03);
+}
+
+.container-pagina4 .box-simulacao {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.container-pagina4 .box-simulacao p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.container-pagina4 .resultado-parcela {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container-pagina4 .resultado-parcela h3 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.container-pagina4 .resultado-parcela p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.container-pagina4 strong {
+  color: #c62828;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .container-pagina4 {
+    padding: 20px 15px;
+  }
+
+  .container-pagina4 .titulo-pagina {
+    font-size: 2rem;
+  }
+
+  .container-pagina4 .btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .container-pagina4 .grupo-formulario {
+    margin: 15px 0;
+  }
+}
